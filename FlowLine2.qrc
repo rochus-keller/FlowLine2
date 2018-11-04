@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/FlowLine2">
+        <file>Images/close.png</file>
+        <file>Images/outline.png</file>
+        <file>Images/outline_item.png</file>
+        <file>Images/epk16.png</file>
+        <file>Images/epk128.png</file>
+        <file>Images/epk64.png</file>
+        <file>Images/epk48.png</file>
+        <file>Images/epk32.png</file>
+        <file>Images/epk-document.png</file>
+        <file>Images/folder-open.png</file>
+        <file>Images/folder.png</file>
+        <file>Images/document.png</file>
+        <file>Images/function.png</file>
+        <file>Images/process.png</file>
+        <file>Images/event.png</file>
+        <file>Images/backward.png</file>
+        <file>Images/upward.png</file>
+        <file>Images/forward.png</file>
+        <file>Images/frame.png</file>
+        <file>Images/note.png</file>
+        <file>Images/connector.png</file>
+        <file>Images/pin.png</file>
+        <file>Images/pred.png</file>
+        <file>Images/succ.png</file>
+        <file>Images/handle.png</file>
+        <file>Images/funcdomain.png</file>
+        <file>Images/allocation.png</file>
+        <file>Images/syselement.png</file>
+        <file>Images/lua-script.png</file>
+    </qresource>
+</RCC>
