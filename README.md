@@ -2,7 +2,7 @@
 
 FlowLine2 is a modelling tool supporting Functional Analysis and Business Process Modelling using Event-driven process chain (EPC) syntax with BPMN extensions (instead of Functional Flow Block Diagrams). It also integrates an outliner with cross-link capabilities, Lua scripting and a full text database with built-in search engine. 
 
-![alt text](http://software.rochus-keller.info/flowlinescreenshot.png "FlowLine2 Screenshot")
+![alt text](http://software.rochus-keller.info/flowlinescreenshot2.png "FlowLine2 Screenshot")
 
 Even if the tool was already of use in projects it is still considered work in progress by its author. Especially the System Tree and allocation concept need more work. 
 
