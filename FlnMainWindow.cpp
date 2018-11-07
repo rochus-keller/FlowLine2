@@ -129,12 +129,17 @@ MainWindow::MainWindow(Udb::Transaction *txn)
 
     // Tab Menu
     Gui2::AutoMenu* pop = new Gui2::AutoMenu( d_tab, true );
-    pop->addCommand( tr("Forward Tab"), d_tab, SLOT(onDocSelect()), tr("CTRL+TAB"), true );
-    pop->addCommand( tr("Backward Tab"), d_tab, SLOT(onDocSelect()), tr("CTRL+SHIFT+TAB"), true );
-    pop->addCommand( tr("Close Tab"), d_tab, SLOT(onCloseDoc()), tr("CTRL+W"), true );
+	pop->addCommand( tr("Forward Tab"), d_tab, SLOT(onDocSelect()), tr("CTRL+TAB") );
+	pop->addCommand( tr("Backward Tab"), d_tab, SLOT(onDocSelect()), tr("CTRL+SHIFT+TAB") );
+	pop->addCommand( tr("Close Tab"), d_tab, SLOT(onCloseDoc()), tr("CTRL+W") );
     pop->addCommand( tr("Close All"), d_tab, SLOT(onCloseAll()) );
     pop->addCommand( tr("Close All Others"), d_tab, SLOT(onCloseAllButThis()) );
     addTopCommands( pop );
+	    
+	new Gui2::AutoShortcut( tr("CTRL+TAB"), this, d_tab, SLOT(onDocSelect()) );
+	new Gui2::AutoShortcut( tr("CTRL+SHIFT+TAB"), this, d_tab, SLOT(onDocSelect()) );
+	new Gui2::AutoShortcut( tr("CTRL+W"), this, d_tab, SLOT(onCloseDoc()) );
+	    
     new Gui2::AutoShortcut( tr("F11"), this, this, SLOT(onFullScreen()) );
     new Gui2::AutoShortcut( tr("CTRL+F"), this, this, SLOT(onSearch()) );
     new Gui2::AutoShortcut( tr("CTRL+Q"), this, this, SLOT(close()) );
